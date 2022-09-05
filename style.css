@@ -1,0 +1,306 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: boder-box;
+
+}
+
+input, button, body, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+  
+  background: #BFD7E4;  
+ 
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+  
+
+  position: absolute;
+ 
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+  background: #293241; 
+
+}
+
+.page {
+  
+  width: 750px;
+  
+  /*border: 1px white solid;*/
+  margin: auto;
+}
+
+
+ 
+header h1 {
+  
+  width: 282px;
+  height: 45px;
+  margin: auto;
+
+  margin-top: 99px;
+  
+  top: 107px;
+
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 36px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+header p {
+  
+  width: 391px;
+  height: 46px;
+  margin: auto;
+  top: 152px;
+ 
+  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #fafafc;
+
+}
+
+.iten {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.iten svg {
+  margin-top: 2px;
+  margin-bottom: 32px;
+}
+
+.code {
+  position: absolute;
+  width: 751px;
+  height: 133px;
+  padding: 0;  
+
+  background: #F67669;
+  border-radius: 20px 20px 0px 0px;
+  
+}
+
+.code h2 {
+  font-family: 'Staatliches';
+
+  margin: 45px 42px 0 290px;
+  color: #FFFFFF;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px
+
+  
+}
+
+form {
+  display: flexbox;
+  width: 623px;
+  margin-top: 130px;
+  background: #fafafc;
+  height: 930px;
+  
+
+  padding: 32px 64px ;
+
+  margin-bottom: 0;
+  
+}
+
+fieldset, fieldset .fieldset-wrapper1 {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: 30px;
+}
+
+/*form fieldset legend {
+  display: flex;
+  text-align: end;
+  
+}*/
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-family: 'Poppins';
+  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+
+  margin-bottom: 8px;
+}
+.input-wrapper label span {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+  
+}
+
+.input-wrapper label span:hover {
+  color: #433263;
+}
+.input-wrapper input, textarea {
+
+
+  background: #FAFAFC;
+  border: 1px solid #8d8dc0;
+  border-radius: 8px;
+
+  height: 56px;
+
+  padding: 0 24px;
+    
+}
+
+.col-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  width: 100%;
+  }
+
+  .col-2 .input-wrapper {
+    width: 100%;
+    max-width: 340px;
+}
+
+fieldset  legend, fieldset .fieldset-wrapper1 legend {
+  font-family: 'Staatliches';
+  text-align: center; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  margin-top: 32px;
+  border-bottom: 1px solid #c1c1da;
+  padding-bottom: 16px;  
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+ 
+}
+
+
+.fieldset-wrapper1 .input-wrapper input {
+  width: 300px;  
+  
+}
+
+.checkbox-wrapper {
+  position: relative;
+
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 24px;
+ height: 24px;
+
+ opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  border: 1px solid #d3d3e4;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+
+.fieldset-wrapper .col-3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;  
+
+}
+
+.fieldset-wrapper .col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+footer {
+  display: flex;  
+  flex-direction: column;
+  width: 623px;  
+  margin-bottom: 100px;
+
+  padding: 10px 64px;
+
+  height: 116px;
+  background: #fafafc;  
+  border-radius: 0px 0px 20px 20px;
+
+}
+
+footer .button {
+  height: 56px;
+  background: #F67669;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 2px;
+  margin: 0%;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b66e66;
+}
