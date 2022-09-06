@@ -210,7 +210,9 @@ fieldset  legend, fieldset .fieldset-wrapper1 legend {
 
 .input-wrapper textarea {
   padding: 0;
-  height: 168px;
+  min-height: 168px;
+  max-width: 628px;
+  min-width: 628px;
  
 }
 
